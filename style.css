@@ -75,7 +75,7 @@ font-size: 1.25rem;
 }
 main{
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 70px auto;
 }
 section{
     display: flex;
@@ -128,17 +128,29 @@ section{
     header{
         padding: 20px;
     }
-    nav{
+    nav,section{
         flex-direction: column;
     }
+    .card{
+        grid-template-columns: 1fr;
+    }
+    section{
+        padding: 20px;
+    }
+    .card-text{
+        margin-right: 20px;
+    }
+    
     
 }
 @media screen and (min-width:576) and (max-width:960px) {
     header{
         padding: 50px;
     }
-    nav{
+    nav,section{
         flex-direction: column;
+
         
     }
+    
 }
